@@ -1,0 +1,108 @@
+
+
+form {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . ."
+      ". cross input . ."
+      ". main main main ."
+      ". . button . ."
+      ". . . . .";
+  }
+  
+  .info{
+    width: 390px;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;    
+
+  }
+  .main {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "a b c";
+    grid-area: main;
+  }
+  
+  .a { grid-area: a; 
+    display: grid;
+    padding: 30px;
+
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;    }
+  
+  .b { grid-area: b; 
+    display: grid;
+    padding: 30px;
+
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;   
+ }
+  
+  .c { grid-area: c; 
+    display: grid;
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;    
+}
+  
+.h3{
+  width: 350px;
+  height: inherit;
+}
+  .button { grid-area: button; }
+  
+  .input { grid-area: input; 
+    justify-content: center;
+    align-content: center;
+
+    grid-auto-flow: column;  
+    margin: auto;    }
+  
+
+.bad_habbits{
+    padding-bottom: 60px;
+
+}
+.Good_Habits{
+    padding-bottom: 60px;
+
+}
+
+.cross{
+    padding-top: 50px;
+    grid-area: cross;
+    width: 250px;
+    height: 160px;
+    scale: 70%;
+}
+
+
+.result{
+  background-color: red;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;   
+
+}

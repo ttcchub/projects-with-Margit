@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "raleway", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+h1{
+    font-weight: bold;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    padding: 50px;
+    
+}
+
+aside {
+    display: grid;
+    flex-direction: grid;
+    justify-content: space-evenly;
+/* From https://css.glass */
+background: rgba(106, 71, 163, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.8px);
+-webkit-backdrop-filter: blur(10.8px);
+border: 1px solid rgba(72, 71, 114, 0.88);
+    position: absolute;
+    top: 50%;
+    width: 30%;
+   left: 450px;
+    grid-auto-flow: column;
+    margin: auto; 
+    padding: 30px;
+}
+
+.colorInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 30%;
+}
+
+section {
+    width: 100%;
+
+}
+
+
+.direction .row1{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;  
+    grid-area: button;
+    width: 100%; 
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;  
+    padding: 10px;
+}
+.direction .row2{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;  
+    grid-area: button;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;  
+    padding: 10px;
+
+}
+.direction .row3{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;  
+    grid-area: button;
+     display: grid; 
+    width: 100%; 
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;  
+    margin: auto;  
+    padding: 10px;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label{
+    display: flex;
+    width: 5vw;
+    height: 5vh;
+   align-items: center;
+   justify-content: center;
+}
+
+label:hover, label:active, input:hover+label, input:active+label {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+/* <div >
+<h2>Code</h2>
+<p id="cssText"></p>
+</div> */

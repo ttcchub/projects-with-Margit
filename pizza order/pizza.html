@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content-="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <title>Pizza Document</title>
+
+</head>
+
+<body>
+  <div class="angry-grid">
+    <div class="logoC">
+      <img src="zaza.png" alt="Image Load Error" width="500" height="330">    
+    </div>   
+    <br>
+   
+  
+    <br>
+    
+
+     <div class="side"> 
+      <h5> Streetstyle Pizza with fast delivery </h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <!-- The flexible grid (content) -->
+  
+    <div class="size">
+        
+      <br>
+        <div class="Dvirt">
+          <h1> 
+            <span class="vert">Pizza Size</span>
+          </h1>
+        </div>  
+      <br>
+
+        <div class="Dvirt">
+          <h5>
+            <span class="vert"> You can choose pizza size<span></span>
+          </h5>
+        </div>
+        
+        <br>
+        
+        <form name="form1" id="Dvirt2">
+          <div class="cntr">
+            <br>
+            <label for="rdo_1" class="btn-radio">
+              <input id="rdo_1" type="radio" value="7.50" name="price" onclick="DisplayPrice(this.value);"> 
+              <svg width="20px" height="20px" viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="9"></circle>
+                <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+              </svg>
+              <span> <b id="sizzze">Small</b>, the price is <b>7,50€</b> </span>
+            </label> 
+
+            <br>
+
+            <label for="rdo_2" class="btn-radio">
+                <input id="rdo_2" type="radio" value="10.50" name="price" onclick="DisplayPrice(this.value);">
+                <svg width="20px" height="20px" viewBox="0 0 20 20">
+                  <circle cx="10" cy="10" r="9"></circle>
+                  <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                  <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+                </svg>
+                <span> <b id="sizzze">Medium</b>, the price is <b>10,50€</b> </span>
+            </label>
+            <br>
+
+            <label for="rdo_3" class="btn-radio">
+                <input id="rdo_3" type="radio" value="12.50" name="price" onclick="DisplayPrice(this.value);">
+                <svg width="20px" height="20px" viewBox="0 0 20 20">
+                  <circle cx="10" cy="10" r="9"></circle>
+                  <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                  <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+                </svg>
+                <span> <b id="sizzze">Large</b>, the price is <b>12,50€</b> </span> 
+            </label>
+            <br>
+
+            <label for="rdo_4" class="btn-radio">
+              <input id="rdo_4" type="radio" value="15.50" name="price" onclick="DisplayPrice(this.value);">
+              <svg width="20px" height="20px" viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="9"></circle>
+                <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z" class="inner"></path>
+                <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z" class="outer"></path>
+              </svg>
+              <span> <b id="sizzze">X-Large</b>, the price is <b> 15,50€ </b> </span>
+            </label>
+          <br>
+        </div>
+      </form>
+      
+    </div>
+
+    <div class="toppings">
+        <h2>Toppings</h2>
+        <b>You can choose an extra topping for your Pizza</b>
+        <form name="form3" id="form3">
+        <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" name="laptop" value="macbooks" data-top>
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <strong class="checkbox-text"> Mega Pack</strong>
+            </label>  
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" id="rdo_1" value="5" name="price3" onclick="DisplayPrice(this.value);">
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <span class="checkbox-text"> <b id="topppings"> BBQ Sause </b> - € 5,00</span>
+            </label>
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" id="rdo_1" value="10" name="price3" onclick="DisplayPrice(this.value);">
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <span class="checkbox-text"> <b id="topppings"> Cheader cheese </b> - € 10,00 </span>
+            </label>
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" id="rdo_1" value="5.60" name="price3" onclick="DisplayPrice(this.value);">
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <span class="checkbox-text"> <b id="topppings"> Salsa Spicy toping </b> - € 5,60 </span>
+            </label>
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" id="rdo_1" value="6" name="price3" onclick="DisplayPrice(this.value);">
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <span class="checkbox-text"> <b id="topppings">Rubby Rooms sause </b>- € 6,00  </span>
+            </label>
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" id="rdo_1" value="4" name="price3" onclick="DisplayPrice(this.value);">
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <span class="checkbox-text"> <b id="topppings">Salty cucumbers</b> - € 4,00 </span>
+            </label>
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" id="rdo_1" value="7" name="price3" onclick="DisplayPrice(this.value);">
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <span class="checkbox-text"> <b id="topppings">Blueberry mayo cream</b> - € 7,00 </span>
+            </label>
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" id="rdo_1" value="5" name="price3" onclick="DisplayPrice(this.value);">
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <span class="checkbox-text"><b id="topppings">Cranchy crekers </b> - € 5,00 </span>
+            </label>
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" id="rdo_1" value="9.50" name="price3" onclick="DisplayPrice(this.value);">
+              <svg class="check-icon" width="24px" height="24px" viewBox="0 0 24 24">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <rect class="check-icon__box" x="1" y="1" width="22" height="22"/>
+                  <polyline class="check-icon__box-worm" points="23,1 1,1 1,23 23,23 23,4" stroke-dasharray="30 146" stroke-dashoffset="30"/>
+                  <polyline class="check-icon__check-worm" points="23,4 10,17 5,12 18,12" stroke-dasharray="17.38 149.68" stroke-dashoffset="103.38"/>
+                </g>
+              </svg>
+              <span class="checkbox-text"> <b id="topppings">Spicy doritos</b>  - € 9.50  </span>
+            </label>
+        </div>
+      </form>
+    </div>
+
+    <div class="delivery"> 
+      <h2>Delivery</h2>
+      <b>Choose one of possible delivery methods</b>
+            <br>
+
+
+            <div class="address" id="address">
+              <fieldset>
+                <br>
+                <legend><b> Leave your address</b></legend>
+                   <label for="primaryaddress">
+                     Address:</label>
+                     <br>
+                     <span class="primaryaddress"></span>
+
+
+                   <input type="text"  name="Address" id="primaryaddress" required />
+                          <br/>
+               </fieldset>
+            </div>
+            
+            <form name="form2" id="form2" class="onDev">
+                <form name="DelivOption" id="DelivOption">
+                  <select name="Delivlist" id="DelivOption" class="onDev" onChange="update()">
+                    <option id="Deliv" value="10" name="price2" onclick="DisplayPrice(this.value);">Delivery 1 - € 10,00</option>
+                    <option id="DelZero" value="0" name="price2"onclick="DisplayPrice(this.value);">Pick Up</option>
+                    <option id="DelZero" value="0" name="price2" onclick="DisplayPrice(this.value);" >Eat In</option>
+                  </select>
+
+                  <output name="Dvalue"type="number" id="Dvalue"> </output>
+                </form>
+            </form>
+            
+    </div>  
+    <div class="data">   
+        <h2> Contact details  </h2>
+        <b>Please leave your phone number and E-mail</b>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <div class="data" id="data">
+          <fieldset>
+            <form id="form1">
+              <br>
+              <label for="primaryName">Name's:</label>
+               <input class="dataInput"  type="text" name="Name" id="primaryName" required />
+              <br>
+              <label for="primaryPhone">Phone:</label>
+               <input class="dataInput"  type="text" name="Phone" id="primaryPhone" required />
+              <br>
+              <label for="email">E-mail:</label>
+                <input class="dataInput"  type="text" name="Email" id="email" value="" required /> 
+              <br>
+              <button class="buttonP custom-btn btn-11" id="Button2" type="button2" value="New Tab" style="visibility:hidden" onclick="handlePurchase()"> Purchase </button>
+
+            </form>
+          </fieldset>
+         </div>
+    </div>  
+    <br>
+    <div class="total">
+          <h2> Order Confirnation </h2>
+          <output id="demo"> </output>
+          <fieldset>
+            <br>
+            <legend><b> Delivery details </b></legend>
+
+               <label for="secondaryaddress"> Address:  </label>
+                <output  name="Address" id="secondaryaddress" ></output>
+              <br>
+            <form id="form">
+
+                <label for="secondaryName"> Names's:  </label>
+                <output  name="Name" id="secondaryName" >
+                </output>
+                <br>
+
+
+                <label for="secondaryPhone"> Phone:  </label>
+                <output  name="Phone" id="secondaryPhone" ></output>
+                <br>
+                
+                <label for="email"> Email:  </label>
+                <output  name="Email" id="secondaryMail" ></output>
+                <br>
+                
+
+                <br>
+                <input type="checkbox" id="same" name="same" 
+                onchange="addressFunction()" />
+                <label for="same">
+                Please confirm details to continue.
+                </label>
+
+            </form>
+             
+              <br>
+
+
+          </fieldset>
+          </div>
+          <div  class="purch">
+            <br>
+            <output id="totalSum" >  </output>
+            <br>
+            <div class="frame">
+              
+            </div>
+          </div>    
+
+    </div>    
+    <script> 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    </script>
+    <script src="script.js"></script>   
+
+
+
+</div>
+</body>
+<footer> 
+</footer>
+ 
+</html>
+
+<!-- 
+/// https://jsfiddle.net/RajeshDixit/dqx5yLz7/1/ ( multiple check )
+/// https://codepen.io/yuhomyan/pen/LYNVVNO ( buttons )
+/// https://codepen.io/valerypatorius/pen/oXGMGL ( cuustom checkbox )
+/// https://codepen.io/avstorm/pen/deRvMy ( nice checkbox animation )
+/// https://www.codewithrandom.com/2022/01/12/vertical-stepper-css-sliding-stepper-using-html-css-javascript/ ( stepper )
+
+https://plnkr.co/edit/hHqleo5ySGFAD7nPxx46?p=preview&preview
+
+https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/ (with submit button)
+
+
+
+https://www.geeksforgeeks.org/javascript-auto-filling-one-field/
+
+
+https://angrytools.com/css-grid/
+
+
+https://stackoverflow.com/questions/8685107/hiding-a-button-in-javascript
+
+
+
+https://www.w3docs.com/snippets/javascript/how-to-get-the-value-of-text-input-field-using-javascript.html  ( checkbox value )
+
+
+droplist value selector >>> https://freakyjolly.com/demo/getDropDownValue_JavaScript_jQuery.html
+
+
+https://stackoverflow.com/questions/13540751/how-get-total-sum-from-input-box-values-using-javascript
+
+
+
+
+-->
+
+
+
+

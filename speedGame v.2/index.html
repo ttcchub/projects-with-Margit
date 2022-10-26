@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+    <title>Speedgame</title>
+  </head>
+  <body>
+
+    
+
+    <div class="container">
+        <model-viewer class="Zmodel" src="img/psDual.glb" camera-controls auto-rotate ar ></model-viewer>
+
+        <h1 class="linear-wipe head"> Dual Shock simulator</h1>
+        <h5 class="underHead"> Press the space bar to start the game. Use your mouse or joystick to practise your reaction in a speedgame. <br> <br>Try to score the maximum points ! </h5>
+
+        <span id="score" class="score"></span> 
+
+        <div class="g">
+          <div></div>
+            
+          <button onmousedown="sound2.play()" class="pushBtn"  type="button" id="circle0" disabled ></button>
+
+          <div></div>          
+          
+          <button onmousedown="sound2.play()" class="pushBtn"  type="button" id="circle1" disabled></button>
+          <div></div>
+            
+          <button onmousedown="sound2.play()" class="pushBtn"  type="button" id="circle2" disabled ></button>
+          <div></div>
+            
+          <button onmousedown="sound2.play()" class="pushBtn"  type="button" id="circle3" disabled  ></button>
+          <div></div>
+        </div>
+
+        <div class="beggin">
+          <button onmousedown="sound1.play()" class="button-start" id="start" onclick="openButtons()"> START</button>
+          <button id="stop" class="hidden button-start"> FINISH </button>  
+        </div>
+       
+    </div>
+
+      <div class="overlay hidden"> 
+
+        <div class="modal">
+          <div class="modalBlock">
+            <h2 class="gOver">GAME OVER</h2>
+
+            <hr class="hr">
+            
+
+            <p class="totalS"> Total combination </p>
+            <span class="totalScore" id="result-score"></span>
+
+            <p class="ExpEarn" id=""> XP Earned </p>
+            <span class="xpScore" id="xpScore" ></span> 
+            <span class="" id=""></span>
+
+
+            <button data-text="Awesome" class="button" onclick="closeModal()" ondblclick="hideButtons"  >
+              <span class="actual-text">&nbsp;Close&nbsp;</span>
+              <span class="hover-text" aria-hidden="true">&nbsp;Close&nbsp;</span>
+          </button>
+            
+          </div>
+        </div>
+      </div>
+
+
+   <!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<script>
+  var sound1 = new Audio();
+  sound1.src = "start.mp3";
+  var sound2 = new Audio();
+  sound2.src = "uiclick.mp3"; 
+
+</script>
+
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+<!-- enable & disable button  -->
+<!-- https://www.howtocodeschool.com/2021/09/enable-and-disable-button-using-javascript.html -->
+<!-- https://www.howtocodeschool.com/2021/10/demo-enable-and-disable-button-using-javascript.html -->
